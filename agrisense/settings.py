@@ -130,11 +130,12 @@ REST_FRAMEWORK = {
     )
 }
 
-ALLOWED_HOSTS = ["*", "192.168.229.51", "localhost"]
-
+CORS_ALLOW_ALL_ORIGINS = True  # simple, allows all
+# OR, restrict to your RN / frontend URLs:
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:19006",
-    "http://192.168.229.51:19006",
+    "https://agrisenseb.onrender.com",
     "exp://192.168.229.51:19000",
 ]
+
 
